@@ -1,0 +1,569 @@
+/****************************************************/
+/* 1. Imports, Sass Variables, etc. */
+/****************************************************/
+
+@import 'main.css';
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+$dark-bg: #f3f5f8;
+$down-btn-bg: rgba(61, 201, 179, 0.7);
+$down-btn-hover-focus: rgba(61, 201, 179, 1);
+$cdspan: #3dc9b3;
+
+/****************************************************/
+/* 2. Base Styles */
+/****************************************************/
+
+/* * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using `em` units. * */
+/* 2. Prevents iOS text size adjust after orientation change, without disabling user zoom. * */
+
+html {
+	font-size: 100%; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+	-ms-text-size-adjust: 100%; /* 2 */
+}
+
+html,
+html a {
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+/* * Addresses `font-family` inconsistency between `textarea` and other form elements. * */
+
+html, button, input, select, textarea {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* * Addresses margins handled incorrectly in IE 6/7. */
+
+body {
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/****************************************************/
+/* 3. Hidden Top Navbar */
+/****************************************************/
+
+nav {
+	background-color: #191C23;
+	margin-top: -1px;
+}
+
+.top-nav {
+	padding: 0;
+	list-style: none;
+
+	> li {
+		padding: 20px 20px 20px 0;
+		border-bottom: 2px dashed #B6CCFE;
+		font-size: 25px;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		a {
+			color: #8899BF;
+			transition: color .3s;
+
+			&:hover {
+				text-decoration: none;
+				color: white;
+			}
+		}
+	}
+}
+
+.pull {
+	display: none;
+}
+
+/****************************************************/
+/* 4. Main Header Content */
+/****************************************************/
+
+.hero {
+	background-image: url(../img/star_trails_2_large.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.social {
+	list-style: none;
+	padding: 0;
+	margin: 50px 0 0 0;
+
+	li {
+		display: inline-block;
+		padding: 0 10px 16px 0;
+	}
+
+	img {
+		background: white;
+		border-radius: 20px;
+		border: 2px solid white;
+		transition: all .5s;
+	}
+}
+
+.img-responsive-center {
+	display: inline-block;
+	padding-top: 75px;
+}
+
+.inner {
+	padding-bottom: 100px;
+
+	span {
+		color: #EF3D33;
+	}
+}
+
+.text-center {
+	h2 {
+		color: white;
+	}
+}
+
+.delay-05s {
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+
+.delay-1s {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+@media (max-width: 767px) {
+	.social {
+		display: none;
+	}
+
+	.img-responsive-center {
+		padding-top: 100px;
+	}
+}
+
+.down-btn {
+	width: 60px;
+	height: 60px;
+	background: $down-btn-bg;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 20px;
+	line-height: 60px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+
+	&:hover,
+	&:focus {
+		background: $down-btn-hover-focus;
+		color: #fff;
+	}
+}
+
+.down-btn-padding {
+	padding-bottom: 80px;
+}
+
+/****************************************************/
+/* 5. Transformicon */
+/****************************************************/
+
+.navicon {
+	height: 26px;
+	position: relative;
+}
+
+#nav-toggle {
+	position: absolute;
+	top: 0;
+	padding: 10px 35px 16px 0;
+	cursor: pointer;
+	margin-top: 55px;
+	right: 15px;
+	z-index: 100;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+	height: 5px;
+	width: 35px;
+	cursor: pointer;
+	position: absolute;
+	background-color: white;
+	display: block;
+	content: '';
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+}
+
+#nav-toggle span:before {
+	top: -10px;
+}
+
+#nav-toggle span:after {
+	bottom: -10px;
+}
+
+#nav-toggle.active span {
+	background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+	top: 0;
+}
+
+#nav-toggle.active span:before {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+	-webkit-transform: translateY(-10px) rotate(-45deg);
+	-ms-transform: translateY(-10px) rotate(-45deg);
+	transform: translateY(-10px) rotate(-45deg);
+	top: 10px;
+}
+.indicator {
+	position: absolute;
+	right: 0 !important;
+}
+
+/****************************************************/
+/* 6. About */
+/****************************************************/
+
+.about {
+	.about_title {
+		padding-bottom: 40px;
+	}
+
+	.light-box {
+		background: #fff;
+		padding: 20px;
+		-webkit-box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.1);
+		-moz-box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.1);
+		box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.1);
+		border: #000 solid 3px;
+
+		h2 {
+			color: #000;
+			font-size: 20px;
+			text-transform: uppercase;
+			font-weight: bold;
+
+			span {
+				color: #1D5360;
+				letter-spacing: 1px;
+			}
+		}
+	}
+}
+
+.view_certificate {
+	margin-bottom: 0;
+	display: inline-block;
+	padding: 73px 5px 0 0;
+
+	a {
+		border: 2px solid #000;
+		padding: 5px;
+		color: #fff;
+		background: #000;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+		-o-transition: all 0.5s;
+		transition: all 0.5s;
+		text-decoration: none;
+
+		&:hover {
+			background: #fff;
+			color: #000;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.view_certificate {
+		font-size: 27px;
+	}
+}
+
+@media (max-width: 515px) {
+	.view_my_shit {
+		text-align: center;
+	}
+}
+
+/****************************************************/
+/* 7. The Flip */
+/****************************************************/
+
+.flip-container {
+	display: inline-block;
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-ms-perspective: 1000;
+	-o-perspective: 1000;
+	perspective: 1000;
+
+	.flipper {
+		-webkit-transition: 0.6s;
+		-moz-transition: 0.6s;
+		-ms-transition: 0.6s;
+		-o-transition: 0.6s;
+		transition: 0.6s;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		position: relative;
+
+		&:hover {
+			-webkit-transform: rotateY(180deg);
+			-moz-transform: rotateY(180deg);
+			-ms-transform: rotateY(180deg);
+			-o-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+		}
+	}
+}
+
+.flip-container,
+.front,
+.back {
+	width: 360px;
+	height: 360px;
+}
+
+.front,
+.back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.front {
+	z-index: 2;
+}
+
+.back {
+	transform: rotateY(180deg);
+
+	.light-box {
+		width: 360px;
+		height: 360px;
+
+		img {
+			padding-bottom: 20px;
+		}
+
+		p {
+			padding-bottom: 20px;
+		}
+
+		h2 {
+			margin-bottom: 60px;
+		}
+
+		a {
+			text-decoration: none;
+
+			span {
+				border: 2px solid #000;
+				padding: 5px;
+				color: #fff;
+				background: #000;
+				-webkit-transition: all 0.5s;
+				-moz-transition: all 0.5s;
+				-ms-transition: all 0.5s;
+				-o-transition: all 0.5s;
+				transition: all 0.5s;
+
+				&:hover {
+					background: #fff;
+					color: #000;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.mobile_padding {
+		padding-bottom: 40px;
+	}
+}
+
+/****************************************************/
+/* 8. Buffer #1 */
+/****************************************************/
+
+.buffer_1 {
+	background: url('../img/subtle_patterns_1.png');
+	background-attachment: fixed;
+	padding: 100px 0;
+
+	.colourful {
+		color: #158F85;
+		letter-spacing: 2px;
+	}
+	span {
+		top: 5px;
+	}
+
+	@media (max-width: 440px) {
+		.bwrap_font_size {
+			font-size: 1.5em;
+		}
+	}
+}
+
+/****************************************************/
+/* 9. Contact */
+/****************************************************/
+
+.dark-bg {
+	background: $dark-bg;
+}
+
+.section-padding {
+	padding: 90px 0 100px;
+}
+
+.contact-wrap {
+	position: relative;
+}
+
+h1.section_title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #353535;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.contact-details {
+	margin: 40px 0;
+
+	h2 {
+		font-size: 20px;
+
+		span {
+			display: block;
+			font-size: 14px;
+			color: $cdspan;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin-top: 15px;
+		}
+	}
+
+	.light-box {
+		background: #fff;
+		padding: 20px 0;
+		-webkit-box-shadow: 0 3px 0 0 #f0f2f4;
+		-moz-box-shadow: 0 3px 0 0 #f0f2f4;
+		box-shadow: 0 3px 0 0 #f0f2f4;
+
+		> h2 {
+			> i {
+				color: #000;
+			}
+		}
+
+		&:hover,
+		&:focus {
+			-webkit-box-shadow: 0 3px 0 0 $cdspan;
+			-moz-box-shadow: 0 3px 0 0 $cdspan;
+			box-shadow: 0 3px 0 0 $cdspan;
+		}
+
+		h2::after {
+			content: "";
+			border: solid 2px $cdspan;
+			display: block;
+			width: 35px;
+			margin: 25px auto;
+		}
+	}
+
+	.box-hover {
+		-webkit-transition: all 500ms ease-in-out;
+		-o-transition: all 500ms ease-in-out;
+		-moz-transition: all 500ms ease-in-out;
+		transition: all 500ms ease-in-out;
+
+		&:hover,
+		&:focus {
+			-webkit-transform: translate(0, -15px);
+			-ms-transform: translate(0, -15px);
+			transform: translate(0, -15px);
+		}
+
+		@media (max-width: 1000px) {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+/****************************************************/
+/* 10. Footer */
+/****************************************************/
+
+footer {
+	background-color: #001D34;
+
+	h5 {
+		color: #fff;
+		padding: 20px 0;
+	}
+
+	.social,
+	h5 {
+		margin: 20px 0;
+	}
+
+	.social {
+		li {
+			padding: 20px 10px 20px 0;
+		}
+	}
+
+	@media (max-width: 1000px) {
+		.mobile-center {
+			text-align: center;
+		}
+	} 
+
+	@media (max-width: 767px) {
+		.social {
+			display: inline-block;
+		}
+	}
+}
