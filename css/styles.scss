@@ -424,14 +424,18 @@ nav {
 	.flip-container,
 	.front,
 	.back {
-		width: 300px;
+		width: 250px;
 		height: 360px;
 	}
 
 	.back {
 		.light-box {
-			width: 300px;
+			width: 250px;
 			height: 360px;
+
+			h2 {
+				margin-bottom: 20px;
+			}
 		}
 	}
 }
