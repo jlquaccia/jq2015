@@ -317,11 +317,11 @@ nav {
   .flip-container,
   .front,
   .back {
-    width: 340px;
+    width: 300px;
     height: 360px; }
 
   .back .light-box {
-    width: 340px;
+    width: 300px;
     height: 360px; } }
 /****************************************************/
 /* 8. Buffer #1 */
