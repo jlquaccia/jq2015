@@ -317,12 +317,21 @@ nav {
   .flip-container,
   .front,
   .back {
-    width: 250px;
+    width: 270px;
     height: 360px; }
 
-  .back .light-box {
-    width: 250px;
+  .front .light-box {
+    width: 270px;
     height: 360px; }
+    .front .light-box h2 {
+      padding-top: 30px;
+      font-size: 30px; }
+
+  .back .light-box {
+    width: 270px;
+    height: 360px; }
+    .back .light-box p {
+      text-align: left; }
     .back .light-box h2 {
       margin-bottom: 20px; } }
 /****************************************************/
