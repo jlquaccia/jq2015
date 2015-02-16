@@ -335,7 +335,30 @@ nav {
     .back .light-box h2 {
       margin-bottom: 20px; } }
 /****************************************************/
-/* 8. Buffer #1 */
+/* 8. Portfolio */
+/****************************************************/
+.portfolio .portfolio_title {
+  padding-bottom: 40px; }
+
+.work-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .work-list ul li {
+    background-image: url("../img/projects/Bansky-Flower-Thrower.jpg");
+    width: 33%;
+    height: 0;
+    padding-bottom: 33%;
+    background-size: cover;
+    display: inline-block;
+    background-position-x: center; }
+
+@media (max-width: 700px) {
+  .work-list ul li {
+    width: 100%;
+    padding-bottom: 70%; } }
+/****************************************************/
+/* 9. Buffer #1 */
 /****************************************************/
 .buffer_1 {
   background: url("../img/subtle_patterns_1.png");
@@ -351,7 +374,7 @@ nav {
       font-size: 1.5em; } }
 
 /****************************************************/
-/* 9. Contact */
+/* 10. Contact */
 /****************************************************/
 .dark-bg {
   background: #f3f5f8; }
@@ -412,7 +435,7 @@ h1.section_title {
         margin-bottom: 30px; } }
 
 /****************************************************/
-/* 10. Footer */
+/* 11. Footer */
 /****************************************************/
 footer {
   background-color: #001D34; }
