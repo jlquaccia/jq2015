@@ -70,6 +70,17 @@
                     </div>
                 </div>
             </nav>
+            <!-- FLOATING NAVBAR -->
+            <nav id="float" class="contain visible" style="opacity: 1; display: block;">
+                <div class="container">
+                    <a href="#" class="logo">Jason Quaccia</a>
+                    <div class="right contain">
+                        <a href="#about">About</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
             <!-- MAIN HEADER CONTENT -->
             <section class="hero" id="hero">
                 <div class="container">
@@ -97,7 +108,7 @@
                     <!-- DOWN ARROW BUTTON -->
                     <div class="row down-btn-padding">
                         <div class="col-md-12 text-center">
-                            <span class="down-btn glyphicon glyphicon-menu-down"></span>
+                            <a href="#about"><span class="down-btn glyphicon glyphicon-menu-down animated flash delay-3s"></span></a>
                         </div>
                     </div>
                 </div>
@@ -107,12 +118,12 @@
         <section class="about dark-bg section-padding" id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12 text-center wp1">
                         <h1 class="section_title about_title">What I'm all about</h1>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 text-center mobile_padding">
+                    <div class="col-lg-4 col-md-6 text-center mobile_padding wp2">
                         <!-- THE FLIP -->
                         <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                             <div class="flipper">
@@ -134,7 +145,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-6">
+                    <div class="col-lg-8 col-md-6 wp2">
                         <p>Dreamcatcher asymmetrical pop-up, flannel +1 umami cardigan mixtape. Messenger bag dreamcatcher try-hard, asymmetrical banh mi tilde hashtag mixtape. Fixie hella dreamcatcher, Echo Park tousled chambray umami polaroid wayfarers iPhone. Deep v four loko sustainable Williamsburg locavore. Gastropub slow-carb pickled Truffaut, cornhole McSweeney's fingerstache Etsy Odd Future selfies plaid freegan authentic direct trade trust fund. Vice distillery typewriter master cleanse, church-key DIY hoodie. Bespoke tote bag chia hella.</p>
                         <p>Dreamcatcher asymmetrical pop-up, flannel +1 umami cardigan mixtape. Messenger bag dreamcatcher try-hard, asymmetrical banh mi tilde hashtag mixtape. Fixie hella dreamcatcher, Echo Park tousled chambray umami polaroid wayfarers iPhone. Deep v four loko sustainable Williamsburg locavore. Gastropub slow-carb pickled Truffaut, cornhole McSweeney's fingerstache Etsy Odd Future selfies plaid freegan authentic direct trade trust fund. Vice distillery typewriter master cleanse, church-key DIY hoodie. Bespoke tote bag chia hella.</p>
                         <div class="row">
@@ -148,10 +159,10 @@
             </div>
         </section>
         <!-- PORTFOLIO -->
-        <section class="portfolio section-padding dark-bg text-center" id="portfolio">
+        <section class="portfolio section-padding text-center" id="portfolio">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 wp3">
                         <h1 class="section_title portfolio_title">Portfolio</h1>
                     </div>
                 </div>
@@ -159,15 +170,56 @@
                     <div class="col-sm-12">
                         <div class="work-list">
                             <ul class="list">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li class="project-entry wp4">
+                                    <h2><a href="https://jlquaccia.github.io/tagged" target="_blank" class="project-title">Tagged <p>A street art inpired app using the Instagram API</p></a></h2>
+                                    <a href="https://jlquaccia.github.io/tagged" target="_blank">
+                                        <img src="./img/projects/Bansky-Flower-Thrower.jpg" alt="Banksy" width="376" height="376">
+                                    </a>
+                                </li>
+                                <li class="project-entry wp5">
+                                    <h2><a href="https://jlquaccia.github.io/deliradio" target="_blank" class="project-title">The Streamery <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, hic.</p></a></h2>
+                                    <a href="https://jlquaccia.github.io/deliradio" target="_blank">
+                                        <img src="./img/projects/deliradio-play.png" alt="The Streamery" width="376" height="376">
+                                    </a>
+                                </li>
+                                <!-- <li class="project-entry">
+                                    <h2><a href="" class="project-title">Street Fighter</a></h2>
+                                    <a href="#">
+                                        <img class="project_entry_white_bg" src="./img/projects/street-fighter-logo-big.png" alt="Street Fighter" width="376" height="376">
+                                    </a>
+                                </li> -->
+                                <li class="project-entry mt-5 wp6">
+                                    <h2><a href="https://jlquaccia.github.io/shopping-list" target="_blank" class="project-title">The List <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, hic.</p></a></h2>
+                                    <a href="https://jlquaccia.github.io/shopping-list" target="_blank">
+                                        <img src="./img/projects/shopping-list.png" alt="The Shopping List" width="376" height="376">
+                                    </a>
+                                </li>
+                                <!-- <li class="project-entry mt-5">
+                                    <h2><a href="" class="project-title">Google Clone</a></h2>
+                                    <a href="#">
+                                        <img class="project_entry_white_bg" src="./img/projects/google-logo.png" alt="Google Clone" width="376" height="376">
+                                    </a>
+                                </li> -->
+                                <li class="project-entry mt-5 wp7">
+                                    <h2><a href="https://jlquaccia.github.io/festival-quiz" target="_blank" class="project-title">Festival Quiz <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, hic.</p></a></h2>
+                                    <a href="https://jlquaccia.github.io/festival-quiz" target="_blank">
+                                        <img src="./img/projects/festival.png" alt="Festival Quiz" width="376" height="376">
+                                    </a>
+                                </li>
+                                <li class="project-entry mt-5 wp8">
+                                    <h2><a href="https://jlquaccia.github.io/hot-or-cold" target="_blank" class="project-title">Hot or Cold <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, hic.</p></a></h2>
+                                    <a href="https://jlquaccia.github.io/hot-or-cold" target="_blank">
+                                        <img src="./img/projects/hot-or-cold.png" alt="Hot or Cold" width="376" height="376">
+                                    </a>
+                                </li>
+                                <li class="project-entry mt-5 coming_soon_1 wp9">
+                                    <h2><a href="#" target="_blank" class="project-title">Coming Soon: Something Awesome</a></h2>
+                                    <a href="#"></a>
+                                </li>
+                                <!-- <li class="project-entry mt-5 coming_soon_2">
+                                    <h2><a href="" class="project-title">Coming Soon: Something Awesome</a></h2>
+                                    <a href="#"></a>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -184,29 +236,32 @@
         <section class="dark-bg text-center section-padding contact-wrap" id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="section_title animated fadeIn">Say hello</h1>
+                    <div class="col-md-12 wp10">
+                        <h1 class="section_title">Say hello</h1>
                     </div>
                 </div>
                 <div class="row contact-details">
-                    <div class="col-md-4">
+                    <div class="col-md-4 wp11">
                         <div class="light-box box-hover">
                             <h2><i class="glyphicon glyphicon-map-marker"></i><span>Address</span></h2>
                             <p>San Francisco, CA</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 wp12 delay-05s">
                         <div class="light-box box-hover">
                             <h2><i class="glyphicon glyphicon-phone-alt"></i><span>Phone</span></h2>
                             <p>(650) 773-5340</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 wp13 delay-1s">
                         <div class="light-box box-hover">
                             <h2><i class="glyphicon glyphicon-envelope"></i><span>Email</span></h2>
                             <p><a href="mailto:jlquaccia@gmail.com">jlquaccia@gmail.com</a></p>
                         </div>
                     </div>
+                    <a href="#top" title="Back to Top" class="go-top">
+                        <span class="glyphicon glyphicon-menu-up"></span>
+                    </a>
                 </div>
         </section>
         <footer>
@@ -228,6 +283,15 @@
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+        <!-- Waypoints (JS) -->
+        <script src="./js/waypoints.min.js"></script>
+
+        <!-- jQuery Easing -->
+        <script src="./js/easing.js"></script>
+
+        <!-- hoverIntent (JS) -->
+        <script src="./js/hoverIntent.js"></script>
 
         <!-- Bootstrap (JS) -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
