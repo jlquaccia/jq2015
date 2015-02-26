@@ -39,6 +39,9 @@ body {
 .right {
   float: right; }
 
+body {
+  font-family: 'Open Sans', sans-serif; }
+
 /****************************************************/
 /* 4. Hidden Top Navbar */
 /****************************************************/
@@ -106,18 +109,44 @@ nav {
   background-attachment: fixed;
   background-size: cover; }
 
-.social {
-  list-style: none;
-  padding: 0;
-  margin: 50px 0 0 0; }
-  .social li {
+.social-icons {
+  margin-top: 41px; }
+  .social-icons a {
     display: inline-block;
-    padding: 0 10px 16px 0; }
-  .social img {
-    background: white;
-    border-radius: 20px;
-    border: 2px solid white;
-    transition: all .5s; }
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    margin: 5px;
+    padding: 0;
+    position: relative;
+    cursor: pointer; }
+    .social-icons a img {
+      -webkit-filter: invert(100%);
+      vertical-align: bottom;
+      display: inline-block;
+      transform: scale(0.7);
+      transition: all 400ms ease; }
+    .social-icons a:hover img {
+      -webkit-filter: invert(0%);
+      transform: scale(0.8); }
+    .social-icons a:after {
+      content: '';
+      background: #fff;
+      position: absolute;
+      width: 0;
+      height: 103%;
+      opacity: .5;
+      transition: all 0.3s;
+      left: 50%;
+      top: 50%;
+      z-index: -1;
+      transform: translateX(-50%) translateY(-50%); }
+    .social-icons a:hover:after {
+      opacity: 1;
+      width: 105%; }
+
+.no_margin {
+  margin: 50px 0; }
 
 .img-responsive-center {
   display: inline-block;
@@ -248,12 +277,12 @@ nav {
   border: #000 solid 3px; }
   .about .light-box h2 {
     color: #000;
-    font-size: 20px;
+    font-size: 15px;
     text-transform: uppercase;
-    font-weight: bold; }
+    font-weight: bold;
+    line-height: 20px; }
     .about .light-box h2 span {
-      color: #1D5360;
-      letter-spacing: 1px; }
+      padding-top: 20px; }
 
 .view_certificate {
   margin-bottom: 0;
@@ -313,7 +342,7 @@ nav {
 .front,
 .back {
   width: 360px;
-  height: 360px; }
+  height: 375px; }
 
 .front,
 .back {
@@ -333,7 +362,7 @@ nav {
   transform: rotateY(180deg); }
   .back .light-box {
     width: 360px;
-    height: 360px; }
+    height: 375px; }
     .back .light-box img {
       padding-bottom: 20px; }
     .back .light-box p {
@@ -380,6 +409,9 @@ nav {
       text-align: left; }
     .back .light-box h2 {
       margin-bottom: 20px; } }
+.thinkful_url {
+  margin-top: -20px; }
+
 /****************************************************/
 /* 10. Portfolio */
 /****************************************************/

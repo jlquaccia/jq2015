@@ -63,6 +63,10 @@ body {
 	float: right;
 }
 
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
 /****************************************************/
 /* 4. Hidden Top Navbar */
 /****************************************************/
@@ -157,22 +161,73 @@ nav {
 	background-size: cover;
 }
 
-.social {
-	list-style: none;
-	padding: 0;
-	margin: 50px 0 0 0;
+// .social {
+// 	list-style: none;
+// 	padding: 0;
+// 	margin: 50px 0 0 0;
 
-	li {
+// 	li {
+// 		display: inline-block;
+// 		padding: 0 10px 16px 0;
+// 	}
+
+// 	img {
+// 		background: white;
+// 		border-radius: 20px;
+// 		border: 2px solid white;
+// 		transition: all .5s;
+// 	}
+// }
+
+.social-icons {
+	margin-top: 41px;
+
+	a {
 		display: inline-block;
-		padding: 0 10px 16px 0;
-	}
+		width: 50px;
+		height: 50px;
+		border: 1px solid #fff;
+		margin: 5px;
+		padding: 0;
+		position: relative;
+		cursor: pointer;
 
-	img {
-		background: white;
-		border-radius: 20px;
-		border: 2px solid white;
-		transition: all .5s;
+		img {
+			-webkit-filter: invert(100%);
+			vertical-align: bottom;
+			display: inline-block;
+			transform: scale(.7);
+			transition: all 400ms ease;
+		}
+
+		&:hover img {
+			-webkit-filter: invert(0%);
+			transform: scale(.8);
+		}
+
+		&:after {
+			content: '';
+			background: #fff;
+			position: absolute;
+			width: 0;
+			height: 103%;
+			opacity: .5;
+			transition: all 0.3s;
+			left: 50%;
+			top: 50%;
+			z-index: -1;
+			transform: translateX(-50%) translateY(-50%);
+		}
+
+		&:hover:after {
+			opacity: 1;
+			width: 105%;
+		}
 	}
+}
+
+.no_margin {
+	margin: 50px 0;
 }
 
 .img-responsive-center {
@@ -338,13 +393,14 @@ nav {
 
 		h2 {
 			color: #000;
-			font-size: 20px;
+			font-size: 15px;
 			text-transform: uppercase;
 			font-weight: bold;
+			line-height: 20px;
 
 			span {
-				color: #1D5360;
-				letter-spacing: 1px;
+				// color: #1D5360;
+				padding-top: 20px;
 			}
 		}
 	}
@@ -425,7 +481,7 @@ nav {
 .front,
 .back {
 	width: 360px;
-	height: 360px;
+	height: 375px;
 }
 
 .front,
@@ -449,7 +505,7 @@ nav {
 
 	.light-box {
 		width: 360px;
-		height: 360px;
+		height: 375px;
 
 		img {
 			padding-bottom: 20px;
@@ -526,6 +582,10 @@ nav {
 			}
 		}
 	}
+}
+
+.thinkful_url {
+	margin-top: -20px;
 }
 
 /****************************************************/
