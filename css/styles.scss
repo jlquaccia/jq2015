@@ -914,6 +914,12 @@ nav {
 	padding: 40px 0 100px;
 }
 
+@media (max-width: 750px) {
+	.section-padding {
+		padding: 20px 0 100px;
+	}
+}
+
 .contact-wrap {
 	position: relative;
 }
