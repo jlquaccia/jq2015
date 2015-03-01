@@ -787,6 +787,35 @@ nav {
 			.project_entry_white_bg {
 				background-color: white;
 			}
+
+			// .mobile_description_container {
+			// 	position: absolute;
+			// 	left: 50%;
+			// 	top: 20%;
+			// 	color: #FFFFFF;
+			// 	font-size: 50px;
+
+			// 	h1 {
+			// 		margin: 0;
+			// 	}
+
+			// 	.mobile_description {
+			// 		position: relative;
+			// 		z-index: 5;
+			// 		left: -50%;
+
+			// 		.view_more_link {
+			// 			border: 1px solid #FFF;
+			// 			padding: 1px;
+			// 			background: rgba(0,0,0,0.5);
+			// 			text-decoration: none;
+
+			// 			span {
+			// 				color: #FFF;
+			// 			}
+			// 		}
+			// 	}
+			// }
 		}
 
 		.mt-5 {
@@ -798,6 +827,12 @@ nav {
 			background-position-x: center;
 			background-position-y: center;
 			background-color: #FFF;
+
+			h2 {
+				span {
+					font-size: 40px;
+				}
+			}
 		}
 
 		.coming_soon_2 {
@@ -809,9 +844,36 @@ nav {
 	}
 }
 
+@media (min-width: 750px) {
+	.project-entry {
+		.mobile_description_container {
+			display: none;
+		}
+	}
+}
+
 @media (max-width: 750px) {
 	.first {
 		margin-bottom: -5px;
+	}
+
+	.project-entry {
+		h2 {
+			display: block !important;
+		}
+
+		.mobile_description {
+			position: absolute;
+			z-index: 5;
+		}
+	}
+
+	.coming_soon_1 {
+		h2 {
+			span {
+				font-size: 40px;
+			}
+		}
 	}
 }
 

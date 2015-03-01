@@ -574,15 +574,29 @@ nav {
     background-position-x: center;
     background-position-y: center;
     background-color: #FFF; }
+    .work-list .list .coming_soon_1 h2 span {
+      font-size: 40px; }
   .work-list .list .coming_soon_2 {
     background-color: #000;
     background-image: url("../img/coming_soon_white_bg_square.png");
     background-position-x: center;
     background-position-y: center; }
 
+@media (min-width: 750px) {
+  .project-entry .mobile_description_container {
+    display: none; } }
 @media (max-width: 750px) {
   .first {
-    margin-bottom: -5px; } }
+    margin-bottom: -5px; }
+
+  .project-entry h2 {
+    display: block !important; }
+  .project-entry .mobile_description {
+    position: absolute;
+    z-index: 5; }
+
+  .coming_soon_1 h2 span {
+    font-size: 40px; } }
 /****************************************************/
 /* 11. Buffer #1 */
 /****************************************************/
