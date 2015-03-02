@@ -74,6 +74,7 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+// IMPORTANT FOR MOBILE
 body,
 html {
 	width: auto !important;
@@ -1037,6 +1038,12 @@ h1.section_title {
 		color: #FFF;
 		display: inline-block;
 		font-size: 16px;
+	}
+}
+
+@media (max-width: 480px) {
+	.go-top {
+		right: 18px;
 	}
 }
 
