@@ -76,7 +76,8 @@ body {
 
 body,
 html {
-	min-width: 376px;
+	width: auto !important;
+  	overflow-x: hidden !important;
 }
 
 /****************************************************/
