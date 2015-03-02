@@ -74,6 +74,11 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+body,
+html {
+	min-width: 376px;
+}
+
 /****************************************************/
 /* 3. Global Styles */
 /****************************************************/
