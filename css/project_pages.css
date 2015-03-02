@@ -807,3 +807,10 @@ hr {
   border-top: 10px solid #78D0A9;
   width: 90%;
   margin: 0 auto; }
+
+@media (max-width: 992px) {
+  .featuring_container {
+    padding-bottom: 50px; }
+
+  .green_bg h1 {
+    padding: 0 10px; } }
