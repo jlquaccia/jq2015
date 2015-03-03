@@ -988,7 +988,8 @@ body {
     body .green_bg .featuring_container {
       padding: 0 15px 15px; }
       body .green_bg .featuring_container .featuring {
-        padding: 0; } }
+        padding: 0;
+        text-align: center; } }
   body .light_bg .padding_top {
     padding-top: 80px; }
     body .light_bg .padding_top a {
