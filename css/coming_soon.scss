@@ -1155,13 +1155,409 @@ body {
 		}
 
 		.featuring_container {
-			padding-left: 50px;
+			padding-bottom: 50px;
 
 			.featuring {
 				margin: 0;
-				padding: 0;
-				list-style-type: circle;
+				padding: 0 120.078px 0 0;
+				list-style-type: none;
 				font-size: 3em;
+
+				li {
+					span {
+						text-decoration: underline;
+					}
+				}
+
+				.line_one {
+					font-size: 145px;
+				}
+
+				.line_two {
+					font-size: 90px;
+				}
+
+				.line_three {
+					font-size: 62px;
+				}
+
+				.line_four {
+					font-size: 46px;
+				}
+
+				.line_five {
+					font-size: 40px;
+				}
+
+				@media (max-width: 1427px) {
+					.line_one {
+						font-size: 135px;
+					}
+
+						.line_two {
+						font-size: 80px;
+					}
+
+					.line_three {
+						font-size: 54px;
+					}
+
+					.line_four {
+						font-size: 41px;
+					}
+
+					.line_five {
+						font-size: 37px;
+					}
+				}
+
+				@media (max-width: 1340px) {
+					.line_one {
+						font-size: 125px;
+					}
+
+						.line_two {
+						font-size: 75px;
+					}
+
+					.line_three {
+						font-size: 52px;
+					}
+
+					.line_four {
+						font-size: 39px;
+					}
+
+					.line_five {
+						font-size: 35px;
+					}
+				}
+
+				@media (max-width: 1253px) {
+					.line_one {
+						font-size: 115px;
+					}
+
+						.line_two {
+						font-size: 70px;
+					}
+
+					.line_three {
+						font-size: 48px;
+					}
+
+					.line_four {
+						font-size: 36px;
+					}
+
+					.line_five {
+						font-size: 33px;
+					}
+				}
+
+				@media (max-width: 1166px) {
+					.line_one {
+						font-size: 105px;
+					}
+
+						.line_two {
+						font-size: 65px;
+					}
+
+					.line_three {
+						font-size: 45px;
+					}
+
+					.line_four {
+						font-size: 34px;
+					}
+
+					.line_five {
+						font-size: 31px;
+					}
+				}
+
+				@media (max-width: 1078px) {
+					.line_one {
+						font-size: 95px;
+					}
+
+						.line_two {
+						font-size: 60px;
+					}
+
+					.line_three {
+						font-size: 42px;
+					}
+
+					.line_four {
+						font-size: 32px;
+					}
+
+					.line_five {
+						font-size: 29px;
+					}
+				}
+
+				@media (max-width: 992px) {
+					.line_one {
+						font-size: 95px;
+					}
+
+						.line_two {
+						font-size: 60px;
+					}
+
+					.line_three {
+						font-size: 42px;
+					}
+
+					.line_four {
+						font-size: 32px;
+					}
+
+					.line_five {
+						font-size: 29px;
+					}
+				}
+
+				@media (max-width: 790px) {
+					.line_one {
+						font-size: 85px;
+					}
+
+						.line_two {
+						font-size: 53px;
+					}
+
+					.line_three {
+						font-size: 37px;
+					}
+
+					.line_four {
+						font-size: 28px;
+					}
+
+					.line_five {
+						font-size: 26px;
+					}
+				}
+
+				@media (max-width: 710px) {
+					.line_one {
+						font-size: 75px;
+					}
+
+						.line_two {
+						font-size: 47px;
+					}
+
+					.line_three {
+						font-size: 33px;
+					}
+
+					.line_four {
+						font-size: 25px;
+					}
+
+					.line_five {
+						font-size: 23px;
+					}
+				}
+
+				@media (max-width: 630px) {
+					.line_one {
+						font-size: 65px;
+					}
+
+						.line_two {
+						font-size: 40px;
+					}
+
+					.line_three {
+						font-size: 28px;
+					}
+
+					.line_four {
+						font-size: 21px;
+					}
+
+					.line_five {
+						font-size: 19px;
+					}
+				}
+
+				@media (max-width: 550px) {
+					.line_one {
+						font-size: 55px;
+					}
+
+						.line_two {
+						font-size: 35px;
+					}
+
+					.line_three {
+						font-size: 25px;
+					}
+
+					.line_four {
+						font-size: 19px;
+					}
+
+					.line_five {
+						font-size: 17px;
+					}
+				}
+
+				@media (max-width: 470px) {
+					.line_one {
+						font-size: 54px;
+					}
+
+						.line_two {
+						font-size: 34px;
+					}
+
+					.line_three {
+						font-size: 24px;
+					}
+
+					.line_four {
+						font-size: 18px;
+					}
+
+					.line_five {
+						font-size: 16px;
+					}
+				}
+
+				@media (max-width: 463px) {
+					.line_one {
+						font-size: 53px;
+					}
+
+						.line_two {
+						font-size: 34px;
+					}
+
+					.line_three {
+						font-size: 24px;
+					}
+
+					.line_four {
+						font-size: 18px;
+					}
+
+					.line_five {
+						font-size: 16px;
+					}
+				}
+
+				@media (max-width: 454px) {
+					.line_one {
+						font-size: 50px;
+					}
+
+						.line_two {
+						font-size: 32px;
+					}
+
+					.line_three {
+						font-size: 23px;
+					}
+
+					.line_four {
+						font-size: 18px;
+					}
+
+					.line_five {
+						font-size: 17px;
+					}
+				}
+
+				@media (max-width: 430px) {
+					.line_one {
+						font-size: 47px;
+					}
+
+						.line_two {
+						font-size: 32px;
+					}
+
+					.line_three {
+						font-size: 23px;
+					}
+
+					.line_four {
+						font-size: 18px;
+					}
+
+					.line_five {
+						font-size: 17px;
+					}
+				}
+
+				@media (max-width: 421px) {
+					.line_one {
+						font-size: 47px;
+					}
+
+						.line_two {
+						font-size: 30px;
+					}
+
+					.line_three {
+						font-size: 21px;
+					}
+
+					.line_four {
+						font-size: 16px;
+					}
+
+					.line_five {
+						font-size: 15px;
+					}
+				}
+
+				@media (max-width: 407px) {
+					.line_zero {
+						font-size: 34px;
+						text-align: center;
+						padding-bottom: 46.9px;
+					}
+
+					.line_one {
+						font-size: 41px;
+					}
+
+						.line_two {
+						font-size: 26px;
+					}
+
+					.line_three {
+						font-size: 18px;
+					}
+
+					.line_four {
+						font-size: 14px;
+					}
+
+					.line_five {
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 992px) {
+		.green_bg {
+			.featuring_container {
+				padding: 0 15px 15px;
+
+				.featuring {
+					padding: 0;
+				}
 			}
 		}
 	}
@@ -1190,6 +1586,15 @@ body {
 				}
 			}
 		}
+
+		.coming_soon_bg {
+			width: 1140px;
+			height: 521px;
+			max-width: 100%;
+			background-image: url("../img/projects/coming_soon.png");
+			background-position-x: center;
+			margin-bottom: 80px;
+		}
 	}
 
 	.image_margin {
@@ -1203,11 +1608,12 @@ hr {
 	margin: 0 auto;
 }
 
-@media (max-width: 992px) {
-	.featuring_container {
-		padding-bottom: 50px;
-	}
+.white_hr {
+	margin-bottom: 46.9px;
+	border-top: 10px solid #F3F5F8;
+}
 
+@media (max-width: 992px) {
 	.green_bg {
 		
 		h1 {

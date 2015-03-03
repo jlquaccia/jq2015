@@ -2,9 +2,9 @@
 /* 1. Nav Transformicon */
 /****************************************************/
 
-// document.querySelector("#nav-toggle").addEventListener("click", function() {
-// 	this.classList.toggle("active");
-// });
+document.querySelector("#nav-toggle").addEventListener("click", function() {
+	this.classList.toggle("active");
+});
 
 /****************************************************/
 /* 2. Slide-In Nav */

@@ -786,12 +786,209 @@ body {
       font-size: 2em;
       margin: 0 0 46.9px; }
     body .green_bg .featuring_container {
-      padding-left: 50px; }
+      padding-bottom: 50px; }
       body .green_bg .featuring_container .featuring {
         margin: 0;
-        padding: 0;
-        list-style-type: circle;
+        padding: 0 120.078px 0 0;
+        list-style-type: none;
         font-size: 3em; }
+        body .green_bg .featuring_container .featuring li span {
+          text-decoration: underline; }
+        body .green_bg .featuring_container .featuring .line_one {
+          font-size: 145px; }
+        body .green_bg .featuring_container .featuring .line_two {
+          font-size: 90px; }
+        body .green_bg .featuring_container .featuring .line_three {
+          font-size: 62px; }
+        body .green_bg .featuring_container .featuring .line_four {
+          font-size: 46px; }
+        body .green_bg .featuring_container .featuring .line_five {
+          font-size: 40px; }
+        @media (max-width: 1427px) {
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 135px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 80px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 54px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 41px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 37px; } }
+        @media (max-width: 1340px) {
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 125px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 75px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 52px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 39px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 35px; } }
+        @media (max-width: 1253px) {
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 115px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 70px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 48px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 36px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 33px; } }
+        @media (max-width: 1166px) {
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 105px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 65px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 45px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 34px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 31px; } }
+        @media (max-width: 1078px) {
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 95px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 60px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 42px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 32px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 29px; } }
+        @media (max-width: 992px) {
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 95px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 60px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 42px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 32px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 29px; } }
+        @media (max-width: 790px) {
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 85px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 53px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 37px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 28px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 26px; } }
+        @media (max-width: 710px) {
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 75px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 47px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 33px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 25px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 23px; } }
+        @media (max-width: 630px) {
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 65px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 40px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 28px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 21px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 19px; } }
+        @media (max-width: 550px) {
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 55px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 35px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 25px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 19px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 17px; } }
+        @media (max-width: 470px) {
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 54px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 34px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 24px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 18px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 16px; } }
+        @media (max-width: 463px) {
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 53px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 34px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 24px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 18px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 16px; } }
+        @media (max-width: 454px) {
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 50px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 32px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 23px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 18px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 17px; } }
+        @media (max-width: 430px) {
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 47px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 32px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 23px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 18px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 17px; } }
+        @media (max-width: 421px) {
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 47px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 30px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 21px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 16px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 15px; } }
+        @media (max-width: 407px) {
+          body .green_bg .featuring_container .featuring .line_zero {
+            font-size: 34px;
+            text-align: center;
+            padding-bottom: 46.9px; }
+          body .green_bg .featuring_container .featuring .line_one {
+            font-size: 41px; }
+          body .green_bg .featuring_container .featuring .line_two {
+            font-size: 26px; }
+          body .green_bg .featuring_container .featuring .line_three {
+            font-size: 18px; }
+          body .green_bg .featuring_container .featuring .line_four {
+            font-size: 14px; }
+          body .green_bg .featuring_container .featuring .line_five {
+            font-size: 13px; } }
+  @media (max-width: 992px) {
+    body .green_bg .featuring_container {
+      padding: 0 15px 15px; }
+      body .green_bg .featuring_container .featuring {
+        padding: 0; } }
   body .light_bg .padding_top {
     padding-top: 80px; }
     body .light_bg .padding_top a {
@@ -809,6 +1006,13 @@ body {
       body .light_bg .padding_top a:hover {
         background: #fff;
         color: #000; }
+  body .light_bg .coming_soon_bg {
+    width: 1140px;
+    height: 521px;
+    max-width: 100%;
+    background-image: url("../img/projects/coming_soon.png");
+    background-position-x: center;
+    margin-bottom: 80px; }
   body .image_margin {
     margin: 80px 0; }
 
@@ -817,9 +1021,10 @@ hr {
   width: 90%;
   margin: 0 auto; }
 
-@media (max-width: 992px) {
-  .featuring_container {
-    padding-bottom: 50px; }
+.white_hr {
+  margin-bottom: 46.9px;
+  border-top: 10px solid #F3F5F8; }
 
+@media (max-width: 992px) {
   .green_bg h1 {
     padding: 0 10px; } }
