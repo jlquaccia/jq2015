@@ -697,7 +697,8 @@ h1.section_title {
   bottom: 24px;
   right: 48px;
   transition: background-color 0.2s ease-in-out;
-  display: none; }
+  display: none;
+  z-index: 100; }
   .go-top:hover {
     background-color: #79d1aa; }
   .go-top span {
@@ -786,7 +787,8 @@ body {
       font-size: 2em;
       margin: 0 0 46.9px; }
     body .green_bg .featuring_container {
-      padding-left: 50px; }
+      padding-left: 50px;
+      padding-bottom: 50px; }
       body .green_bg .featuring_container .featuring {
         margin: 0;
         padding: 0;

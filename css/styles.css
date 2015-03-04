@@ -362,6 +362,8 @@ nav {
   padding-bottom: 40px; }
 .about .about_text {
   font-size: 20px; }
+.about .about_text_mobile {
+  display: none; }
 .about .light-box {
   background: #fff;
   padding: 20px;
@@ -483,7 +485,13 @@ nav {
 
 @media (max-width: 992px) {
   .mobile_padding {
-    padding-bottom: 40px; } }
+    padding-bottom: 40px; }
+
+  .about .disappear_mobile {
+    display: none; }
+  .about .about_text_mobile {
+    display: block;
+    font-size: 20px; } }
 @media (max-width: 500px) {
   .flip-container,
   .front,
@@ -542,10 +550,10 @@ nav {
         margin-left: -188px;
         width: 376px;
         height: 376px;
-        font-size: 70px;
+        font-size: 80px;
         text-decoration: none;
         color: #FFFFFF; }
-        .work-list .list .project-entry h2 a p {
+        .work-list .list .project-entry h2 a span {
           font-size: 40px; }
       .work-list .list .project-entry h2 .one {
         background-color: rgba(0, 47, 61, 0.5); }

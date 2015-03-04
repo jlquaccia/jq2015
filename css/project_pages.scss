@@ -1023,6 +1023,7 @@ h1.section_title {
 	right: 48px;
 	transition: background-color 0.2s ease-in-out;
 	display: none;
+	z-index: 100;
 
 	&:hover {
 		background-color: $down-btn-hover-focus;
@@ -1156,6 +1157,7 @@ body {
 
 		.featuring_container {
 			padding-left: 50px;
+			padding-bottom: 50px;
 
 			.featuring {
 				margin: 0;

@@ -497,6 +497,10 @@ nav {
 		font-size: 20px;
 	}
 
+	.about_text_mobile {
+		display: none;
+	}
+
 	.light-box {
 		background: #fff;
 		padding: 20px;
@@ -662,6 +666,17 @@ nav {
 	.mobile_padding {
 		padding-bottom: 40px;
 	}
+
+	.about {
+		.disappear_mobile {
+			display: none;
+		}
+
+		.about_text_mobile {
+			display: block;
+			font-size: 20px;
+		}
+	}
 }
 
 @media (max-width: 500px) {
@@ -750,11 +765,11 @@ nav {
 					margin-left: -188px;
 					width: 376px;
 					height: 376px;
-					font-size: 70px;
+					font-size: 80px;
 					text-decoration: none;
 					color: #FFFFFF;
 
-					p {
+					span {
 						font-size: 40px;
 					}
 				}
