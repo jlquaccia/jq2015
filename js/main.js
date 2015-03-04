@@ -143,11 +143,6 @@ $(document).ready(function() {
 	}, {
 		offset: '75%'
 	});
-	$('.wp14').waypoint(function() {
-		$('.wp14').addClass('animated fadeInDown');
-	}, {
-		offset: '50%'
-	});
 });
 
 /****************************************************/
