@@ -24,13 +24,24 @@ html {
   font-size: 100%;
   /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
+  -moz-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  /* 2 */
+  text-size-adjust: 100%;
   /* 2 */ }
 
 html,
 html a {
   -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -webkit-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -moz-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -ms-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -o-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
 /* * Addresses `font-family` inconsistency between `textarea` and other form elements. * */
@@ -77,9 +88,17 @@ nav {
       border-bottom: none; }
     .top-nav > li a {
       color: #000;
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      -o-transition: all .3s ease;
       transition: all .3s ease; }
       .top-nav > li a:hover {
         text-decoration: none;
+        -webkit-text-shadow: 1px 1px #000;
+        -moz-text-shadow: 1px 1px #000;
+        -ms-text-shadow: 1px 1px #000;
+        -o-text-shadow: 1px 1px #000;
         text-shadow: 1px 1px #000; }
 
 .pull {
@@ -251,10 +270,16 @@ nav {
 
 .delay-05s {
   -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -ms-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
   animation-delay: 0.5s; }
 
 .delay-1s {
   -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -o-animation-delay: 1s;
   animation-delay: 1s; }
 
 .delay-3s {
@@ -342,11 +367,15 @@ nav {
 
 #nav-toggle.active span:before {
   -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
 
 #nav-toggle.active span:after {
   -webkit-transform: translateY(-10px) rotate(-45deg);
+  -moz-transform: translateY(-10px) rotate(-45deg);
+  -o-transform: translateY(-10px) rotate(-45deg);
   -ms-transform: translateY(-10px) rotate(-45deg);
   transform: translateY(-10px) rotate(-45deg);
   top: 10px; }
@@ -369,6 +398,8 @@ nav {
   padding: 20px;
   -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
   border: #000 solid 3px; }
   .about .light-box h2 {
@@ -665,6 +696,8 @@ h1.section_title {
     padding: 20px 0;
     -webkit-box-shadow: 0 3px 0 0 #f0f2f4;
     -moz-box-shadow: 0 3px 0 0 #f0f2f4;
+    -ms-box-shadow: 0 3px 0 0 #f0f2f4;
+    -o-box-shadow: 0 3px 0 0 #f0f2f4;
     box-shadow: 0 3px 0 0 #f0f2f4; }
     .contact-details .light-box > h2 > i {
       color: #000; }
@@ -673,6 +706,8 @@ h1.section_title {
     .contact-details .light-box:hover, .contact-details .light-box:focus {
       -webkit-box-shadow: 0 3px 0 0 #79D1AA;
       -moz-box-shadow: 0 3px 0 0 #79D1AA;
+      -ms-box-shadow: 0 3px 0 0 #79D1AA;
+      -o-box-shadow: 0 3px 0 0 #79D1AA;
       box-shadow: 0 3px 0 0 #79D1AA; }
     .contact-details .light-box h2::after {
       content: "";
@@ -684,9 +719,12 @@ h1.section_title {
     -webkit-transition: all 500ms ease-in-out;
     -o-transition: all 500ms ease-in-out;
     -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out; }
     .contact-details .box-hover:hover, .contact-details .box-hover:focus {
       -webkit-transform: translate(0, -15px);
+      -moz-transform: translate(0, -15px);
+      -o-transform: translate(0, -15px);
       -ms-transform: translate(0, -15px);
       transform: translate(0, -15px); }
     @media (max-width: 1000px) {
@@ -697,6 +735,7 @@ h1.section_title {
   background-color: rgba(121, 209, 170, 0.7);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
   width: 60px;
@@ -704,6 +743,10 @@ h1.section_title {
   position: fixed;
   bottom: 24px;
   right: 48px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
   display: none; }
   .go-top:hover {
