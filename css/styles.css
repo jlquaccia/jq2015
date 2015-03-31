@@ -641,6 +641,10 @@ nav {
 
   .coming_soon_1 h2 span {
     font-size: 40px; } }
+.work-list .list .project-entry h2 .one div {
+  padding-left: 5px;
+  margin-bottom: -75px; }
+
 /****************************************************/
 /* 11. Buffer #1 */
 /****************************************************/
