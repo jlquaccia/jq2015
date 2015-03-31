@@ -765,6 +765,12 @@ h1.section_title {
 @media (max-width: 480px) {
   .go-top {
     right: 18px; } }
+@media (max-width: 360px) {
+  .simply_put_your_way {
+    margin-left: -42px; }
+
+  .work-list .list .project-entry h2 a {
+    font-size: 75px; } }
 /****************************************************/
 /* 13. Footer */
 /****************************************************/
