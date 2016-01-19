@@ -1,0 +1,61 @@
+/****************************************************/
+/* 1. Variables */
+/****************************************************/
+/****************************************************/
+/* 2. Main Styles */
+/****************************************************/
+.dark-bg {
+  background: #f3f5f8; }
+
+.section-padding {
+  padding: 90px 0 100px; }
+
+.contact-wrap {
+  position: relative; }
+
+h1.arrow {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #353535;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  background: url("../img/h1-bg.png") no-repeat center bottom; }
+
+.contact-details {
+  margin: 40px 0; }
+  .contact-details h2 {
+    font-size: 20px; }
+    .contact-details h2 span {
+      display: block;
+      font-size: 14px;
+      color: #3dc9b3;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 15px; }
+  .contact-details .light-box {
+    background: #fff;
+    padding: 20px 0;
+    -webkit-box-shadow: 0 3px 0 0 #f0f2f4;
+    -moz-box-shadow: 0 3px 0 0 #f0f2f4;
+    box-shadow: 0 3px 0 0 #f0f2f4; }
+    .contact-details .light-box:hover, .contact-details .light-box:focus {
+      -webkit-box-shadow: 0 3px 0 0 #3dc9b3;
+      -moz-box-shadow: 0 3px 0 0 #3dc9b3;
+      box-shadow: 0 3px 0 0 #3dc9b3; }
+  .contact-details .box-hover {
+    -webkit-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out; }
+    .contact-details .box-hover:hover, .contact-details .box-hover:focus {
+      -webkit-transform: translate(0, -15px);
+      -ms-transform: translate(0, -15px);
+      transform: translate(0, -15px); }
+
+h2::after {
+  content: "";
+  border: solid 2px #3dc9b3;
+  display: block;
+  width: 35px;
+  margin: 25px auto; }
